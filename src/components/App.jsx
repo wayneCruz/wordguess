@@ -10,6 +10,8 @@ import Navbar from "./Navbar.jsx"
 import bgMusicFile from "../assets/music/background-music.mp3"
 import correctSound from "../assets/music/correctSound.mp3"
 import wrongSound from "../assets/music/wrongSound.mp3"
+import backgroundPhoto from "../assets/avengers/avengers-vs-thanos.webp"
+
 
 export default function AssemblyEndgame() {
     //state values
@@ -246,7 +248,7 @@ export default function AssemblyEndgame() {
           
           <p className={timerClass}>Time: <span>{formatTime(count)}</span></p>
           <div className="background-overlay">
-            <img src="/src/assets/avengers/avengers-vs-thanos.webp" alt="background photo"/>
+            <img src={backgroundPhoto} alt="background photo"/>
           </div>
 
           {menuShown || isGameOver ? 

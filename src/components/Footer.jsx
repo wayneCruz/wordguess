@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom"
 import "../styles/footer.css"
+import twitter from "../assets/twitter.png"
+import linkedin from "../assets/linkedin.png"
+import github from "../assets/github-sign.png"
 
 export default function Footer() {
   return <footer className="credits-container">
@@ -13,13 +16,13 @@ export default function Footer() {
 
     <div className="account-link-container">
       <Link to="https://x.com/@UzumakiWayney" target="_blank">
-        <img src="/src/assets/twitter.png" alt="X account"/>
+        <img src={twitter} alt="X account"/>
       </Link>
       <Link to="https://www.linkedin.com/in/nylbert-wayne-cruz-128832339" target="_blank">
-        <img src="/src/assets/linkedin.png" alt="Linkedin account"/>
+        <img src={linkedin} alt="Linkedin account"/>
       </Link>
       <Link to="https://github.com/wayneCruz" target="_blank">
-        <img src="/src/assets/github-sign.png" alt="Github account"/>
+        <img src={github} alt="Github account"/>
       </Link> 
     </div>
   </footer>

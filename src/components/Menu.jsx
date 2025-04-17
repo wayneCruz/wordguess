@@ -4,6 +4,9 @@ import { useEffect, useRef } from "react"
 import MuteButton from "./MuteButton"
 import victorySound from "../assets/music/victory-music.mp3"
 import gameOverSound from "../assets/music/gameover.mp3"
+import victoryBg from "../assets/avengers/avengers-won.jpg"
+import gameOverBg from "../assets/avengers/thanos-won.jpg"
+import avengersBg from "../assets/avengers/avengers-background.jpg"
 
 export default function Menu(props) {
   //localstorage value for high score
@@ -66,13 +69,13 @@ export default function Menu(props) {
 
       {props.isOver ? 
         <div className="result-background-image">
-          {props.win && <img src="/src/assets/avengers/avengers-won.jpg" />
+          {props.win && <img src={victoryBg} />
           }
-          {props.lost && <img src="/src/assets/avengers/thanos-won.jpg" />}
+          {props.lost && <img src={gameOverBg} />}
         </div> 
           : 
         <div className="result-background-image">
-          <img src="/src/assets/avengers/avengers-background.jpg" />
+          <img src={avengersBg} />
         </div>
       }
       
