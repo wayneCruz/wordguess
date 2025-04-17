@@ -1,0 +1,261 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-overlay {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  opacity: 0.5;
+}
+
+.title-container {
+  width: 70%;
+  max-width: 400px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(235, 137, 0);
+  background-image: url("/src/assets/title-background.jpg");
+  background-size: 100% 100%;
+}
+.title-container h1{ 
+  padding: 0;
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;  margin: 0;
+  color: rgb(214, 207, 196); 
+  font-size: 1.7rem;
+  text-shadow: 5px 5px #680101;
+  animation-name: title;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes title {
+  0% {
+    transform: scaleX(1);
+  }25% {
+    transform: scaleX(1.1);
+  }50% {
+    transform: scaleX(1.2);
+  }75% {
+    transform: scaleX(1.1);
+  }100% {
+    transform: scalex(1);
+  }
+}
+
+.menu {
+  width: 80%;
+  min-width: 280px;
+  max-width: 900px;
+  height: 80%;
+  border-radius: 20px;
+  background-color: rgb(222, 215, 215);
+  z-index: 102;
+  color: rgb(31, 29, 29);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.menu .button-play {
+  min-width: 120px;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  padding: 10px 25px;
+  border-radius: 25px;
+  background-color: rgb(30, 21, 97);
+  cursor: pointer;
+  border: 2px solid rgb(23, 16, 73);
+  font-weight: bold;
+  z-index: 101;
+  animation-name: button;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }50% {
+    transform: scale(1.05);
+  }100% {
+    transform: scale(1);
+  }
+}
+
+.menu .button-play:hover {
+  opacity: 0.9;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.menu .button-play:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.6;
+}
+
+.menu .game-status {
+  width: 60%;
+  min-width: 250px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.7rem;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 101;
+  opacity: 0.9;
+}
+
+.menu .game-status h2{
+  font-size: 1.7rem;
+  margin: 0;
+  color: rgb(66, 21, 21);
+  
+}
+
+.menu .game-status h3{
+  margin: 0.3rem;
+}
+
+.menu .game-status h3 strong{
+  color: rgb(202, 186, 186);
+  text-decoration: underline;
+}
+
+.menu .game-status p{
+  font-size: 1rem;
+  margin: 0;
+  color: rgb(34, 26, 26);
+}
+
+.menu .lost {
+  background-color: rgb(218, 63, 63);
+  color: white;
+}
+
+.menu .win {
+  color: rgb(65, 58, 58);
+  background-color: rgb(113, 187, 113);
+}
+
+.score-container {
+  background-color: rgba(254, 254, 254, 0.5);
+  margin-top: 1rem;
+  border: 2px solid black;
+  text-align: start;
+  width: 80%;
+  padding: 6px;
+  border-radius: 8px;
+  z-index: 101;
+}
+
+.score-container p {
+  font-size: 0.rem;
+}
+
+.correct-word-p strong{
+  color: rgb(16, 50, 16);
+  text-decoration: underline;
+}
+
+.menu-header {
+  border-radius: 8px;
+  margin: 0;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 50px;
+  background-color: black;  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 4px solid rgb(198, 172, 172);
+  color: white;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.menu-header strong {
+  color: white;
+}
+
+.result-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 20px;
+  opacity: 0.1;
+}
+
+.result-background-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.result-icon {
+  position: absolute;
+  left: 1.5rem;
+}
+
+.game-description-intro {
+  width: 80%;
+  max-width: 410px;
+}
+
+.game-description-intro p{
+  font-size: 1.2rem;
+}
+
+.game-description-intro strong{
+  color: rgb(58, 123, 58);
+}
+
+.mute-button-container {
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+  border-radius: 50%;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.mute-button-container:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+}
+
+.game-logo {
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+}
