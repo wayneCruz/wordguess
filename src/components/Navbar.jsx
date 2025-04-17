@@ -1,12 +1,13 @@
 import "../styles/navbar.css"
 import MuteButton from "./MuteButton"
+import settingsIcon from "../assets/settings-icon.svg"
 
 export default function Navbar(props) {
   return <nav 
       className="nav-bar-container">
     <button className="settings-button">
       <img onClick={props.settingsClick}
-        src="/src/assets/settings-icon.svg" 
+        src={settingsIcon} 
         alt="settings icon"/>
     </button>
 
