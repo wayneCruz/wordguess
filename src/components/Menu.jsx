@@ -7,7 +7,7 @@ import gameOverSound from "../assets/music/gameover.mp3"
 import victoryBg from "../assets/avengers/avengers-won.jpg"
 import gameOverBg from "../assets/avengers/thanos-won.jpg"
 import avengersBg from "../assets/avengers/avengers-background.jpg"
-import appIcon from "../../public/wordguess-icon.png";
+import appIcon from "../assets/wordguess-icon.png";
 
 export default function Menu(props) {
   //localstorage value for high score
