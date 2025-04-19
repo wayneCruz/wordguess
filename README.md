@@ -1,12 +1,7 @@
-# React + Vite
+<h1>Word Guess: Endgame</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>Help the Avengers! Guess the universe in under 8 attempts in 2 minutes to keep the world safe from the Mad Titan Thanos!</p>
 
-Currently, two official plugins are available:
+<a href="https://waynecruz.github.io/wordguess/">View Live</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<a href="https://github.com/user-attachments/assets/62d60afd-4d10-4b11-b615-5b8a202eb997">Preview Video</a>
