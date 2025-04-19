@@ -7,7 +7,7 @@ import github from "../assets/github-sign.png"
 export default function Footer() {
   return <footer className="credits-container">
     <p>Made by: <Link className="link-portfolio" 
-          to="https://www.google.com"
+          to="https://waynecruz.github.io/portfolio/"
           target="_blank"
           >
         <strong>Dev Wayne</strong>
